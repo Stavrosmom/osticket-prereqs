@@ -19,8 +19,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Create a Resource Group in Azure
-- Create a Windows 10 Virtual Machine in Azure
+- Resource Group in Azure
+- Windows 10 Virtual Machine in Azure
 - Item 3
 - Item 4
 - Item 5
@@ -31,22 +31,22 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/usZ0DCk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Once a Windows 10 virtual machine has been created in Azure, log in with RDP. Once logged in, right click the start button and select "run". After selecting "run" type "control panel".
+Once a Windows 10 virtual machine has been created in Azure, log in with RDP. Once logged in, right click the start button and select "run". After selecting "run" type "control panel". Enter the Control Panel and select "Programs". 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/yCD2Cqd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next, select "Turn windows features on or off" and look for "Internet Information Services". Turn on "FTP Server", "Web Management Tools", and"World Wide Web Services". Expand "World Wide Web Services" and turn on "CGI". Select "Ok".
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/yIfYFHL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Once CGI has been enabled, open click this link for access to the installation files. https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 </p>
 <br />
