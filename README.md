@@ -48,7 +48,7 @@ Next, select "Turn windows features on or off" and look for "Internet Informatio
 <p>
 Once CGI has been enabled, open click this link for access to the installation files. https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
   
-  From the Istallation files, download and install PHPManagerForIIS_V1.5.0msi and then rewwrite_amd_64_en-US.msi
+  From the Installation files, download and install PHPManagerForIIS_V1.5.0msi and then rewwrite_amd_64_en-US.msi
   
 </p>
 <br />
@@ -59,12 +59,12 @@ Once CGI has been enabled, open click this link for access to the installation f
  </p>
  <br />
  <p>
-  <img src="https://i.imgur.com/xi9OxyC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/cyD2NMF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   </p>
   <br />
   <p>
-  From the installation files download and install VC_redist.x86.exe. after, download and install MySQL 5.5.62. when installing MySQL, 
-  Select "Typical Setup", "Launch Configuration Wizard (after Install)", and "Standard Configuration"
+  From the installation files download and install VC_redist.x86.exe. After, download and install MySQL 5.5.62. When installing MySQL, 
+  select "Typical Setup", "Launch Configuration Wizard (after Install)", and "Standard Configuration".
  </p>
  <br />
   <p>
@@ -92,7 +92,7 @@ Once CGI has been enabled, open click this link for access to the installation f
 </p>
 <br />
 <p>
-  <img src="https://i.imgur.com/SJeIxpx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/vmenpZ8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
  </p>
  <br />
  <p>
@@ -109,23 +109,31 @@ Once CGI has been enabled, open click this link for access to the installation f
   <br />
   <p>
   <img src="https://i.imgur.com/SJeIxpx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  Go back to IIS, Sites->Default->osTicket. Double-click PHP Manager. Click "Enable or disable and extention".
-  Enable:
-  - php_imap.dll
-  - php_intl.dll
-  - php_opcache.dll
   </p>
   <br />
   <p>
-  <img src="https://i.imgur.com/SJeIxpx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  Go back to IIS, Sites->Default->osTicket. Double-click PHP Manager. Click "Enable or disable and extention".
+  Enable:
+  
+  - php_imap.dll
+  - php_intl.dll
+  - php_opcache.dll
+  
+  </p>
+  <br />
+  <p>
+  <img src="https://i.imgur.com/iRp1zaL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
   <br />
   <p>
-  Refresh the osTicket site in your browse, observe the changes.
+  Refresh the osTicket site in your browser, observe the changes.
   </p>
   <br />
   <p>
   <img src="https://i.imgur.com/PsTtf1o.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  </p>
+  <br />
+  <p>
   Next, rename file C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php to C:\wwwroot\osTicket\include\ost-config.php
   </p>
   <br />
@@ -151,13 +159,33 @@ Next, from the installation files, install Heidi SQL. Then create a new session 
   <br />
   <p>
   Next, start setting up osTicket in the browser. Name the helpdesk, input emails and information. (does not need to be valid) 
-  MySQL Databse: osTicket
-  MySQL Username: root
-  MySQL Password: Password1
+  
+  - MySQL Databse: osTicket
+  - MySQL Username: root
+  - MySQL Password: Password1
+  
+  
+  
   Click "Install Now!"
-  Congratulations, hopefully it installed with no errors!
-  - Browse to your helpn desk login page: http://localhost/osTicket/scp/login.php
-  -end user osTicket URL: http://localhost/osTicket/
+  </p>
+  <br />
+  <p>
+  <img src="https://i.imgur.com/t1vGOxd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  </p>
+  <br />
+  <p>
+  Congratulations, osTicket is now installed!
+  </p>
+  <br />
+  <p>
+  <img src="https://i.imgur.com/niyAiC9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  </p>
+  <br />
+  <p>
+  
+  - Help desk login URL: http://localhost/osTicket/scp/login.php
+  - End user osTicket URL: http://localhost/osTicket/
+  
   </p>
   <br />
   <p>
@@ -166,6 +194,7 @@ Next, from the installation files, install Heidi SQL. Then create a new session 
   <br />
   <p>
   Clean up
+  
   - Delete: C:\inetpub\wwwroot\osTicket\setup
   - Set permissions to "read and execute" only C:\inetpub\wwwroot\osTicket\include\ost-config.php  
   
