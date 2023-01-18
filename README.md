@@ -176,6 +176,7 @@ Next, from the installation files, install Heidi SQL. Then create a new session 
   <br />
   <p>
   <img src="https://i.imgur.com/niyAiC9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/pVQ5hSO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   </p>
   <br />
   <p>
