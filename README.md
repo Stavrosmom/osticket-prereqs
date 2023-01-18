@@ -138,7 +138,36 @@ Once CGI has been enabled, open click this link for access to the installation f
   </p>
   <br />
   <p>
-  <img src="https://i.imgur.com/hRGuRjI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/p9YkYZP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  </p>
+  <br />
+  <p>
+Next, from the installation files, install Heidi SQL. Then create a new session with a username and password. (I used root/Password1) Connect to the session and create a new database called "osTicket".
+  </p>
+  <br />
+  <p>
+  <img src="https://i.imgur.com/jnc1zfb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  </p>
+  <br />
+  <p>
+  Next, start setting up osTicket in the browser. Name the helpdesk, input emails and information. (does not need to be valid) 
+  MySQL Databse: osTicket
+  MySQL Username: root
+  MySQL Password: Password1
+  Click "Install Now!"
+  Congratulations, hopefully it installed with no errors!
+  - Browse to your helpn desk login page: http://localhost/osTicket/scp/login.php
+  -end user osTicket URL: http://localhost/osTicket/
+  </p>
+  <br />
+  <p>
+  <img src="https://i.imgur.com/ICggZzx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  </p>
+  <br />
+  <p>
+  Clean up
+  - Delete: C:\inetpub\wwwroot\osTicket\setup
+  - Set permissions to "read and execute" only C:\inetpub\wwwroot\osTicket\include\ost-config.php  
   
   
   
