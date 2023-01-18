@@ -89,3 +89,56 @@ Once CGI has been enabled, open click this link for access to the installation f
   <br />
   <p>
   Install osTicket V1.15.8 from the installation files. Next extract and copy "Upload" folder to C:\inetpub\wwwroot. Within C:\inetpub\wwwroot, rename "upload" to "osTicket". After, reload IIS.
+</p>
+<br />
+<p>
+  <img src="https://i.imgur.com/SJeIxpx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ </p>
+ <br />
+ <p>
+  In IIS go to Sites->Default->osTicket. On the right, click "Browse*:80". If everything has been done correctly osTicket will open in a new tab.
+  </p>
+  <br />
+  <p>
+  <img src="https://i.imgur.com/SQAioTe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  </p>
+  <br />
+  <p>
+  Note that some extentions are not enabled.
+  </p>
+  <br />
+  <p>
+  <img src="https://i.imgur.com/SJeIxpx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  Go back to IIS, Sites->Default->osTicket. Double-click PHP Manager. Click "Enable or disable and extention".
+  Enable:
+  - php_imap.dll
+  - php_intl.dll
+  - php_opcache.dll
+  </p>
+  <br />
+  <p>
+  <img src="https://i.imgur.com/SJeIxpx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+   </p>
+  <br />
+  <p>
+  Refresh the osTicket site in your browse, observe the changes.
+  </p>
+  <br />
+  <p>
+  <img src="https://i.imgur.com/PsTtf1o.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  Next, rename file C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php to C:\wwwroot\osTicket\include\ost-config.php
+  </p>
+  <br />
+  <p>
+  <img src="https://i.imgur.com/hRGuRjI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  </p>
+  <br />
+  <p>
+  Next, to the file we recently renamed to "ost-config.php", go to advanced security settings and disable inheritance. Then, create new permissions to give full access to everyone.
+  </p>
+  <br />
+  <p>
+  <img src="https://i.imgur.com/hRGuRjI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+  
+  
