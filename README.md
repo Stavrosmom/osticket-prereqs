@@ -1,4 +1,4 @@
-# osticket-prereqs
+# osTicket-Prereq/Install
 <p align="center">
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
@@ -21,9 +21,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Resource Group in Azure
 - Windows 10 Virtual Machine in Azure
-- Item 3
-- Item 4
-- Item 5
 
 <h2>Installation Steps</h2>
 
